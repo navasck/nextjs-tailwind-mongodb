@@ -1,0 +1,28 @@
+npm i axios mongoose next-auth react-hook-form
+
+1.https://tailwindcss.com/
+
+  npm install -D tailwindcss postcss autoprefixer
+
+  npx tailwindcss init -p
+
+  
+   .) inside tailwind.config.js
+
+     module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+  .) inside global.css
+
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
