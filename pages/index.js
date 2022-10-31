@@ -1,14 +1,19 @@
-import Image from 'next/image'
-import Layout from '../components/layout'
-import styles from '../styles/Home.module.css'
+import Image from "next/image";
+import Layout from "../components/Layout";
+import Productitem from "../components/Productitem";
+import styles from "../styles/Home.module.css";
+import data from "../utils/data";
 
 export default function Home() {
   return (
     <>
-    <Layout>
-      Home Page
-    </Layout>
-      
+      <Layout title="Home Page">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
+          {data.products.map((product) => (
+            <Productitem product={product} key={product.slug}></Productitem>
+          ))}
+        </div>
+      </Layout>
     </>
-  )
+  );
 }
