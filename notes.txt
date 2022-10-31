@@ -25,4 +25,4 @@ npm i axios mongoose next-auth react-hook-form
     @tailwind base;
     @tailwind components;
     @tailwind utilities;
-F1E5-7DE8
+
